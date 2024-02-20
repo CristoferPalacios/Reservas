@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context=".Inicio1">
+
+    <!-- ImageView -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix"
+        android:src="@drawable/fondo"
+        android:layout_weight="1" /> <!-- Ajuste para abarcar la mitad de la hoja -->
+
+    <!-- LinearLayout -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cardView"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_weight="1"> <!-- Ajuste para abarcar la mitad de la hoja -->
+
+        <!-- Texto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elije tu habitacion ideal"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Desde acogedoras habitaciones individuales hasta amplias suites familiares, con todas las comodidades para que disfrutes de una estadía inolvidable"
+            android:textColor="@color/gris"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <!-- CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:layout_weight="1"> <!-- Ajuste para abarcar la mitad de la hoja -->
+
+        <!-- Contenido del CardView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="35dp">
+
+            <!-- Texto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/degradado1"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/img"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"/>
+
+            <!-- Botón dentro del CardView -->
+            <Button
+                android:id="@+id/siguiente2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/degradado1"
+                android:text="Siguiente"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/saltar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/gris"
+                android:text="Saltar"
+                android:textColor="@color/degradado1" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

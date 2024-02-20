@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#3F51B5</color>
+    <color name="purple">#631AD9</color>
+    <color name="degradado">#56CCF2</color>
+    <color name="degradado1">#2F80ED</color>
+    <color name="gris">#808080</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="my_custom_color">#2F80ED</color>
+    <color name="colorDivider">#FF000000</color>
+    <color name="colorText">#FF000000</color>
+
+
+</resources>

@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context=".Inicio2">
+
+    <!-- ImageView -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix"
+        android:src="@drawable/fondo5"
+        android:layout_weight="1" /> <!-- Ajuste para abarcar la mitad de la hoja -->
+
+    <!-- LinearLayout -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cardView"
+        android:layout_margin="35dp"
+        android:orientation="vertical"
+        android:layout_weight="1"> <!-- Ajuste para abarcar la mitad de la hoja -->
+
+        <!-- Texto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reserva en solo minutos"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Reserva tu habitación en Stone House de forma rápida y segura a travéz de nuestra app. Ingresa tus fechas de viaje, selecciona la habitación que deseas y confirma tu reserva"
+            android:textColor="@color/gris"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <!-- CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:layout_weight="1"> <!-- Ajuste para abarcar la mitad de la hoja -->
+
+        <!-- Contenido del CardView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <!-- Texto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/degradado1"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/img"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"/>
+
+            <!-- Botón dentro del CardView -->
+            <Button
+                android:id="@+id/siguiente3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/degradado1"
+                android:text="Siguiente"
+                android:textColor="@android:color/white"
+                android:paddingTop="20dp"/>
+
+            <Button
+                android:id="@+id/saltar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:text="STONE H"
+                android:textColor="@android:color/transparent"
+                android:enabled="false"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
