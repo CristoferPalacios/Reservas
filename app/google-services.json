@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "689596468372",
+    "project_id": "palacinhotel",
+    "storage_bucket": "palacinhotel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689596468372:android:b914f53e9de2393d263881",
+        "android_client_info": {
+          "package_name": "com.hotel.reservas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689596468372-jvhum3mahqnhldrs848b3t6nh7ief99o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hotel.reservas",
+            "certificate_hash": "30e934d75722e8dd41fd0bfd4abb594add77102a"
+          }
+        },
+        {
+          "client_id": "689596468372-1t4conlib32uq1kp6nj2rnmb1tgef6s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPxPjCUR0wCOyhXusGC6lRIdCmeDT0_sE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689596468372-1t4conlib32uq1kp6nj2rnmb1tgef6s5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
