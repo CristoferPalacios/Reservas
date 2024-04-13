@@ -39,17 +39,11 @@ public class Menu extends AppCompatActivity {
                 if (itemId == R.id.home){
                     loadFragment(new HomeFragment(), false);
 
-                }else if (itemId == R.id.search){
-                    loadFragment(new SearchFragment(), false);
-
                 }else if (itemId == R.id.reservation){
                     loadFragment(new ReservationFragment(), false);
-
                 }else { // Profile
                     loadFragment(new ProfileFragment(), false);
-
                 }
-
                 return true;
             }
         });

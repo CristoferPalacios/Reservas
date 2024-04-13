@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="blue">#3F51B5</color>
+    <color name="blue">#1E90FF</color>
     <color name="purple">#631AD9</color>
     <color name="degradado">#56CCF2</color>
     <color name="degradado1">#2F80ED</color>
@@ -25,4 +25,6 @@
     <color name="verde_oliva_claro2">#C2CCB4</color>
     <color name="celeste_claro">#B3E5FC</color>
     <color name="celeste_muy_claro">#E1F5FE</color>
+    <color name="grisc_claro">#DCDCDC</color>
+    <color name="grisc_oscuro">#A9A9A9</color>
 </resources>

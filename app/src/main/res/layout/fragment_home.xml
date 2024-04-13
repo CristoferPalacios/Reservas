@@ -1,19 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_f1"
+    android:orientation="vertical"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:text="Inicio"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola, Hector"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/tipodeletra" />
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/borde">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_search_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Search"
+                android:textColor="@color/grisc_oscuro"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/tipodeletra" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="220dp"
+                android:src="@drawable/baseline_menu_24"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde2"
+                android:text="Recomendado"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde2"
+                android:text="Popular"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde2"
+                android:text="Servicios"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde2"
+                android:text="Servicios"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="20dp" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Imagen de la habitación -->
+        <ImageView
+            android:id="@+id/imageRoom"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagen1" />
+
+        <!-- Nombre de la habitación -->
+        <TextView
+            android:id="@+id/textRoomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suite familiar"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="280dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <!-- Tipo de habitación -->
+        <TextView
+            android:id="@+id/textRoomType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sisita de Plata"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/textRoomName"
+            android:layout_alignStart="@id/textRoomName" />
+
+        <TextView
+            android:id="@+id/textRoomPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S/ 150 /noche "
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/textRoomType"
+            android:layout_alignStart="@id/textRoomType" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
+
+

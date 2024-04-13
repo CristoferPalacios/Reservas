@@ -9,13 +9,6 @@
         android:title="Inicio"
         />
 
-    <item
-        android:id="@+id/search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:icon="@drawable/buscar"
-        android:title="Buscar"
-        />
 
     <item
         android:id="@+id/reservation"
@@ -29,7 +22,7 @@
         android:id="@+id/profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:icon="@drawable/usuario"
+        android:icon="@drawable/usuario2"
         android:title="Perfil"
         />
 

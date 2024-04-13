@@ -8,6 +8,7 @@
     android:gravity="center"
     android:background="@drawable/background_f1"
     android:orientation="vertical"
+    android:backgroundTint="@color/white"
     tools:context=".Menu">
 
     <androidx.appcompat.widget.Toolbar
